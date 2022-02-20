@@ -258,7 +258,7 @@
 
   @media screen and (max-width: 720px) {
     #navbar {
-      transform: scale(1.2);
+      transform: scale(1.2) translate(-50%, -50%);
     }
   }
 </style>
