@@ -1,0 +1,68 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --blue1: #caf0f8;
+  --blue2: #ade8f4;
+  --blue3: #90e0ef;
+  --blue4: #48cae4;
+  --blue5: #00b4d8;
+  --blue6: #0096c7;
+  --blue7: #0077b6;
+  --blue8: #023e8a;
+  --blue9: #03045e;
+  --blueGray1: #353539;
+  --blueGray2: #333337;
+  --blueGray3: #313135;
+  --blueGray4: #292933;
+  --blueGray5: #272731;
+  --blueGray6: #252529;
+  --blueGray7: #232327;
+  --blueGray8: #212125;
+  --blueGray9: #191923;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  color: var(--blue4);
+  background-color: var(--blueGray9);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+  touch-action: pan-y;
+}
+
+section {
+  min-height: 100vh;
+  max-width: 100vw;
+  width: 100%;
+  padding: 50px;
+  position: relative;
+  color: #333;
+}
+section::before {
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: calc(100% - 50px);
+  width: calc(100% - 50px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section:nth-of-type(odd)::before {
+  background-color: var(--blue5);
+}
+section:nth-of-type(even)::before {
+  background-color: var(--blue7);
+}
