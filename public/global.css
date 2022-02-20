@@ -50,7 +50,7 @@ body::after {
 }
 
 /* smartphones, touchscreens */
-@media (hover: none) and (pointer: coarse) {
+@media (hover: none) and (pointer: coarse) and (max-width: 720px) {
   body::after {
     content: "Press and hold for menu";
   }
