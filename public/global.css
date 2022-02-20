@@ -41,6 +41,21 @@ body {
   touch-action: pan-y;
 }
 
+body::after {
+  content: "Right click for menu";
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+}
+
+/* smartphones, touchscreens */
+@media (hover: none) and (pointer: coarse) {
+  body::after {
+    content: "Press and hold for menu";
+  }
+}
+
 section {
   min-height: 100vh;
   max-width: 100vw;
